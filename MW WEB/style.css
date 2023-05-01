@@ -1,0 +1,849 @@
+/* font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono:400");
+
+/* reset all the extra default margin and paddings */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* avoid extra owerflow */
+body,
+html {
+  overflow-x: hidden;
+}
+
+/* customize bootstrap navbar for all pages*/
+.navbar {
+  background-color: transparent;
+  padding: 30px;
+  font-family: "Roboto", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: right;
+}
+
+.navbar ul li {
+  margin: 0px 20px;
+}
+
+/* 
+navbar active page color */
+.yy {
+  color: rgb(229, 229, 102) !important;
+}
+
+/* all the links */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* hamburger menu for navbar*/
+.fa-bars {
+  color: #fafafa;
+}
+
+/* remove border around hamburger */
+.navbar-toggler {
+  color: transparent;
+}
+
+/* hidden logo for phone */
+.logo {
+  display: none;
+}
+
+.navscroll {
+  width: 100%;
+  margin: 0px auto 60px auto;
+  padding-top: 30px;
+  height: auto;
+  position: fixed;
+  top: 12%;
+  left: 0;
+  bottom: 1px;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+/* navbar link effects */
+.linko {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+
+.linko:hover,
+.linko:focus {
+  color: rgb(0, 0, 0);
+}
+
+/* navbar link effects with before psedu selector */
+.linko:before {
+  content: attr(data-content);
+  color: #e3e4e4;
+  text-transform: uppercase;
+  font-size: inherit;
+  font-weight: inherit;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.4);
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  transition: all 0.3s ease 0s;
+}
+
+.linko:hover:before {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+/* homepage background picture */
+.backgroundpic {
+  background-image: url("../newpics/MWWEBBACKGROUNDMAIN.jpg");
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* discography page background picture */
+.discography {
+  background-image: url("../newpics/MWWEBBACKGROUNDDISCO1.jpg");
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* mixes page background picture */
+.djmix {
+  background-image: url("../newpics/MWWEBBACKGROUNDMIX.jpg");
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* visuals page background picture */
+.nftvisual {
+  background-image: url("../newpics/MWWEBBACKGROUNDNFT.jpg");
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/*press page background picture */
+.presso {
+  background-image: url("../newpics/MWWEBBACKGROUNDPRESS.jpg");
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* contact page background picture */
+.cont {
+  background-image: url("../newpics/MWWEBBACKGROUNDCONTACT.jpg");
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* homepage glitchy text */
+.text {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  width: 80%;
+}
+
+.div {
+  animation: glitch 1s linear infinite;
+}
+
+/* glitchy effect animation */
+@keyframes glitch {
+
+  5%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+div:before,
+div:after {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+div:before {
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+/* glitchy effect animation */
+@keyframes glitchTop {
+
+  2%,
+  64% {
+    transform: translate(5px, -5px);
+  }
+
+  10%,
+  60% {
+    transform: translate(-5px, 5px);
+  }
+
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+
+div:after {
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
+  }
+}
+
+/* page 2 / discography page code */
+/* main fixed box */
+.mainbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  width: 90%;
+  margin: 80px auto 60px auto;
+  padding-top: 30px;
+  height: auto;
+  position: fixed;
+  top: 2%;
+  left: 5%;
+  bottom: 1px;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+/* two boxes in each row */
+.smallbox {
+  width: 45%;
+  height: auto;
+  margin: 10px;
+  text-align: left;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  transition-duration: 4s;
+  transition-delay: 2s;
+  transition: all 0.5s ease-out;
+}
+
+/* hide overflow */
+.covers {
+  overflow: hidden;
+}
+
+.smallbox h6 {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.smallbox img {
+  width: 30%;
+  transition: 2s all;
+}
+
+/* image hover effect */
+.smallbox img:hover {
+  transform: scale(1.2);
+}
+
+
+.smallbox p {
+  position: absolute;
+  right: 15%;
+  top: 0%;
+  width: 50%;
+  opacity: 0.4;
+  transition: 2s all;
+  height: 150px;
+  overflow-y: scroll !important;
+}
+
+/* paragraph hover effect */
+.smallbox:hover p {
+  opacity: 1;
+}
+
+.smallbox p:hover img {
+  opacity: 1;
+  transform: scale(1.2);
+  opacity: 0.4;
+}
+
+/* icons inside smallbox */
+.smallbox i {
+  font-size: 18px;
+  margin: 5px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+/* page 3 / mixes page code*/
+.mixes {
+  margin: 0;
+  position: center;
+  padding-top: 5%;
+  margin-top: 2%;
+}
+
+.mix {
+  padding-right: 50px !important;
+}
+
+
+/* page 4 / visuals page code*/
+.visual-row {
+  width: 90%;
+  margin: 0px auto 30px auto;
+}
+
+.vids {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+/* box for video */
+.video-box {
+  width: 25%;
+  height: 215px;
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  margin-top: 8px;
+}
+
+/* nft box */
+.nft {
+  height: 200px;
+  margin: 0px 20px;
+}
+
+/* text*/
+.texto {
+  width: 25%;
+  height: 200px;
+  text-align: left;
+}
+
+/* visual main big box with fixed effect*/
+.visualbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  width: 90%;
+  margin: 80px auto 60px auto;
+  padding-top: 30px;
+  height: auto;
+  position: fixed;
+  top: 2%;
+  left: 5%;
+  bottom: 1px;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+/* page 5 / press page code*/
+.pressimage {
+  display: flex;
+  justify-content: center;
+}
+
+.upup {
+  margin-top: -50px;
+}
+
+/* press main big box with fixed effect*/
+.tt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  width: 90%;
+  margin: 80px auto 60px auto;
+  padding-top: 30px;
+  height: auto;
+  position: fixed;
+  top: 2%;
+  left: 5%;
+  bottom: 1px;
+  z-index: 1;
+  overflow-y: scroll;
+}
+/* 
+image on left side */
+.imagep {
+  width: 30%;
+  margin-top: 35px;
+}
+
+.imagep img {
+  width: 65%;
+}
+
+
+/* text on right side */
+.rtext {
+  width: 65%;
+  margin-top: 30px;
+  text-align: left;
+  margin-left: -60px;
+  font-family: sans-serif;
+  height: 300px;
+  overflow: scroll;
+}
+
+.rtext p {
+  line-height: 18px;
+}
+
+.social-links {
+  padding-bottom: 15px;
+}
+
+.social-links li a i {
+  width: 32px;
+  height: 32px;
+  padding: 12px 0;
+  border-radius: 50%;
+  font-size: 13px;
+  line-height: 7px;
+  text-align: center;
+  color: #fafafa;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+  background: #e84610;
+}
+
+#footer-details {
+  padding: 20px;
+}
+
+.review1 {
+  padding: 300px;
+  text-align: left;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  height: 40px;
+}
+
+/* footer for all the pages */
+footer {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background-color: #27262686;
+  color: white;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* social media icons */
+.icon {
+  color: black;
+  height: 30px;
+  width: 30px;
+  border: 1px solid yellow;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+/* icon hover effect */
+.icon:hover {
+  background-color: yellow;
+}
+
+
+/* page 6 / contact page code */
+.form-section {
+  border: 2px solid transparent;
+  border-radius: 30px;
+  font-family: sans-serif;
+  background-color: rgba(255, 255, 255, 0.2);
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  width: 50%;
+}
+
+.form-section h2 {
+  margin-bottom: 15px;
+}
+
+.form-section input,
+textarea {
+  width: 50%;
+  padding: 3px;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  margin: 0px auto 10px auto;
+}
+
+/* submit button */
+input[type="submit"] {
+  background-color: #303d31;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/*  Media query starts here */
+/* @media only screen and (max-width: 1024px) {} */
+
+/* ipad air  starts*/
+@media only screen and (max-width: 992px) {
+  .backgroundpic {
+    height: 100vh;
+  }
+
+  .text {
+    top: 20%;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-right: 45px;
+  }
+
+  .navbar-toggler {
+    margin-top: 25px;
+    margin-right: 50px;
+  }
+
+  .nav-link {
+    margin: 0px !important;
+    padding: 0;
+  }
+
+  /* space removed */
+  .nav-item {
+    margin: 0;
+    padding: 0;
+  }
+
+  /*  this is for ipad layout for discography */
+  .mainbox {
+    top: 15%;
+  }
+
+  .visualbox {
+    top: 15%;
+  }
+
+  .tt {
+    top: 15%;
+  }
+
+  /*  this is for ipad layout for mixes */
+  .mixes {
+    margin: 0;
+    position: center;
+    padding-top: 30%;
+    margin-top: 2%;
+  }
+
+  .smallbox p {
+    position: absolute;
+    right: 15%;
+    top: 0%;
+    width: 50%;
+    opacity: 0.4;
+    transition: 2s all;
+    height: 100px;
+    overflow-y: scroll !important;
+  }
+}
+/* ipad air  end*/
+
+
+/* ipad mini start */
+@media only screen and (max-width: 768px) {
+  .text {
+    top: 30%;
+    font-size: 25px;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-right: 45px;
+  }
+
+  .navbar-toggler {
+    margin-top: 25px;
+    margin-right: 50px;
+  }
+}
+
+/* ipad air  end*/
+
+/* phone media query start */
+
+@media only screen and (max-width: 600px) {
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-right: 0px;
+  }
+
+  /* background images without logo for all 6 pages*/
+  .backgroundpic {
+    background-image: url(../newpics/backgroundiphone.jpg);
+  }
+
+  .discography {
+    background-image: url(../newpics/backgroundiphone.jpg);
+  }
+
+  .djmix {
+    background-image: url(../newpics/backgroundiphone.jpg);
+  }
+
+  .nftvisual {
+    background-image: url(../newpics/backgroundiphone.jpg);
+  }
+
+  .presso {
+    background-image: url(../newpics/backgroundiphone.jpg);
+  }
+
+  .cont {
+    background-image: url(../newpics/backgroundiphone.jpg);
+  }
+
+  .text {
+    top: 30%;
+    font-size: 15px;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+    margin-top: 5px;
+    border: none;
+  }
+
+  .nav-link {
+    font-size: 10px;
+  }
+
+  .nav-item {
+    margin: 0;
+    padding: 0 !important;
+  }
+
+  /* unhide hidden logo */
+  .logo {
+    display: inline-block;
+    color: #fafafa;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  footer p {
+    font-size: 10px;
+    text-align: left;
+    margin-top: 10px;
+    opacity: 0.7;
+  }
+
+  .smallbox {
+    width: 100%;
+    height: auto;
+  }
+
+  .mixes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    width: 90%;
+    margin: 80px auto 60px auto;
+    padding-top: 30px;
+    height: auto;
+    position: fixed;
+    top: 15%;
+    left: 5%;
+    bottom: 1px;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+
+  .video-box {
+    width: 100%;
+  }
+
+  .texto {
+    display: none;
+  }
+
+  .nft {
+    display: none;
+    height: 50px;
+    margin: 0px 20px;
+    width: 50px;
+  }
+
+  .form-section {
+    border: 2px solid transparent;
+    border-radius: 30px;
+    font-family: sans-serif;
+    background-color: rgba(255, 255, 255, 0.2);
+    justify-content: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 90%;
+  }
+}
+
+/* phone media query end */
