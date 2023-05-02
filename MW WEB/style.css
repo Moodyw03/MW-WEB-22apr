@@ -94,7 +94,7 @@ a {
   color: rgb(0, 0, 0);
 }
 
-/* navbar link effects with before psedu selector */
+/* navbar link effects with before pseudo selector */
 .linko:before {
   content: attr(data-content);
   color: #e3e4e4;
@@ -426,6 +426,7 @@ div:after {
   width: 25%;
   height: 200px;
   text-align: left;
+  overflow-y: scroll !important;
 }
 
 /* visual main big box with fixed effect*/
