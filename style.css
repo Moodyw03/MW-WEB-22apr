@@ -21,7 +21,7 @@ html {
   background-color: transparent;
   padding: 30px;
   font-family: "Roboto", sans-serif;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
@@ -118,7 +118,7 @@ a {
 
 /* homepage background picture */
 .backgroundpic {
-  background-image: url("../newpics/MWWEBBACKGROUNDMAIN.jpg");
+  background-image: url("./newpics/MWWEBBACKGROUNDMAIN.jpg");
   position: relative;
   width: 100%;
   height: 100vh;
@@ -132,7 +132,7 @@ a {
 
 /* discography page background picture */
 .discography {
-  background-image: url("../newpics/MWWEBBACKGROUNDDISCO1.jpg");
+  background-image: url("./newpics/MWWEBBACKGROUNDDISCO1.jpg");
   position: relative;
   width: 100%;
   height: 100vh;
@@ -147,7 +147,7 @@ a {
 
 /* mixes page background picture */
 .djmix {
-  background-image: url("../newpics/MWWEBBACKGROUNDMIX.jpg");
+  background-image: url("./newpics/MWWEBBACKGROUNDMIX.jpg");
   position: relative;
   width: 100%;
   height: 100vh;
@@ -161,7 +161,7 @@ a {
 
 /* visuals page background picture */
 .nftvisual {
-  background-image: url("../newpics/MWWEBBACKGROUNDNFT.jpg");
+  background-image: url("./newpics/MWWEBBACKGROUNDNFT.jpg");
   position: relative;
   width: 100%;
   height: 100vh;
@@ -174,7 +174,7 @@ a {
 
 /*press page background picture */
 .presso {
-  background-image: url("../newpics/MWWEBBACKGROUNDPRESS.jpg");
+  background-image: url("./newpics/MWWEBBACKGROUNDPRESS.jpg");
   position: relative;
   width: 100%;
   height: 100vh;
@@ -188,7 +188,7 @@ a {
 
 /* contact page background picture */
 .cont {
-  background-image: url("../newpics/MWWEBBACKGROUNDCONTACT.jpg");
+  background-image: url("./newpics/MWWEBBACKGROUNDCONTACT.jpg");
   position: relative;
   width: 100%;
   height: 100vh;
@@ -381,10 +381,11 @@ div:after {
 /* page 3 / mixes page code*/
 .mixes {
   margin: 0;
-  position: center;
-  padding-top: 5%;
+  padding-top: -30%;
   margin-top: 2%;
+  
 }
+
 
 .mix {
   padding-right: 50px !important;
@@ -588,8 +589,9 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 50px;
-  width: 50%;
+  padding: 10px;
+  width: 30%;
+  margin-top: 0px;
 }
 
 .form-section h2 {
@@ -599,14 +601,14 @@ footer {
 .form-section input,
 textarea {
   width: 50%;
-  padding: 3px;
+  padding: 2px;
 }
 
 label,
 input,
 textarea {
   display: block;
-  margin: 0px auto 10px auto;
+  margin: 0px auto 5px auto;
 }
 
 /* submit button */
@@ -624,10 +626,69 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+
+@media only screen and (max-width: 1200px) {
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-right: -10px;
+  }
+  .nav-link {
+    margin: 0px !important;
+    padding: 0;
+  }
+  .tt {
+    
+    top: 17%;
+
+  }
+  .visualbox {
+    
+    top: 17%;
+    
+  }
+  .mainbox {
+    
+    top: 17%;
+    
+  }
+  .form-section {
+         
+    width: 50%;
+   
+  }
+
+
+  
+label,
+input,
+textarea {
+  display: block;
+  margin: 0px auto 0px auto;
+}
+
+/* submit button */
+input[type="submit"] {
+  background-color: #303d31;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 2px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+  }
+
 /*  Media query starts here */
 /* @media only screen and (max-width: 1024px) {} */
 
-/* ipad air  starts*/
+/* medium devices starts*/
 @media only screen and (max-width: 992px) {
   .backgroundpic {
     height: 100vh;
@@ -677,7 +738,6 @@ input[type="submit"] {
   /*  this is for ipad layout for mixes */
   .mixes {
     margin: 0;
-    position: center;
     padding-top: 30%;
     margin-top: 2%;
   }
@@ -693,14 +753,208 @@ input[type="submit"] {
     overflow-y: scroll !important;
   }
 }
-/* ipad air  end*/
+/* medium devices  end*/
 
+/* tilted phone*/
+ @media only screen and (max-width: 900px) and (min-width: 819px)  {
+  .navbar ul {
+   justify-self: center;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0px;
+    margin-top: 20px;
+    padding-left: 120px;
+   }
+
+   .nav-link{
+    font-size: 14px;
+    margin-left: 50px;
+   }
+.backgroundpic {
+  height: 200vh;
+  }
+  .text{
+    font-size: 16px;
+    top: 30%;
+   
+  }
+  .navbar-toggler {
+    margin-top: -20px;
+    margin-right: 50px;
+  }
+  .logo {
+    display: inline-block;
+    color: #fafafa;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .backgroundpic {
+    background-image: url(./newpics/HOMEBACK.jpg);
+    height: 100vh;
+  }
+
+  .discography {
+    background-image: url(./newpics/DISCOBACK.jpg);
+  }
+
+  .djmix {
+    background-image: url(./newpics/MIXESBACK.jpg);
+  }
+
+  .nftvisual {
+    background-image: url(./newpics/VISUALSBACK.jpg);
+  }
+
+  .presso {
+    background-image: url(./newpics/PRESSBACK.jpg)
+  }
+
+  .cont {
+    background-image: url(./newpics/CONTACTBACK.jpg);
+   height: 130vh;
+  }
+  .mixes{
+    padding-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    width: 90%;
+    margin: 80px auto 60px auto;
+    padding-top: 30px;
+    height: auto;
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    bottom: 1px;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+
+  .mix{
+    width: 50%;
+  }
+  .form-section {
+         
+    width: 40%;
+    font-size: 12px;
+   
+  }
+  .form-section h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  
+  .form-section input,
+  textarea {
+    width: 80%;
+    padding: 0px;
+    font-size: 12px;
+  }
+
+ }
+ 
+     /*ipade air*/
+     @media only screen and (max-width: 820px) and (min-width: 767px)  {
+      .navbar ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-right: 45px;
+      }
+    
+      .backgroundpic {
+        height: 100vh;
+        }
+        .text{
+          font-size: 30px;
+          top: 30%;
+         
+        }
+        .mixes {
+          margin: 0;
+          padding-top: 0%;
+          margin-top: 0%;
+          position: fixed;
+          top: 20%;
+          left: 5%;
+          background-color: transparent;
+          backdrop-filter: blur(0px);
+          border: none;
+      
+        }
+        .djmix {
+   
+          height: 100vh;
+        }
+        .form-section {
+         
+          width: 60%;
+          padding: 20px;
+          font-size: 18px;
+         
+        }
+        .cont {
+          background-image: url(./newpics/CONTACTBACK.jpg);
+          height: 100vh;
+        }
+        .form-section h2 {
+          margin-bottom: 5px;
+          font-size: 25px;
+        }
+        
+        .form-section input,
+        textarea {
+          width: 80%;
+          padding: 10px;
+          font-size: 12px;
+          margin: 10px auto;
+        }
+     }
 
 /* ipad mini start */
 @media only screen and (max-width: 768px) {
+  .backgroundpic {
+    background-image: url(./newpics/HOMEBACK.jpg);
+    height: 100vh;
+  }
+
+  .discography {
+    background-image: url(./newpics/DISCOBACK.jpg);
+  }
+
+  .djmix {
+    background-image: url(./newpics/MIXESBACK.jpg);
+  }
+
+  .nftvisual {
+    background-image: url(./newpics/VISUALSBACK.jpg);
+  }
+
+  .presso {
+    background-image: url(./newpics/PRESSBACK.jpg)
+  }
+
+  .cont {
+    background-image: url(./newpics/CONTACTBACK.jpg);
+    height: 100vh;
+  }
   .text {
     top: 30%;
     font-size: 25px;
+  }
+  .logo {
+    display: inline-block;
+    color: #fafafa;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
   }
 
   .navbar ul {
@@ -728,31 +982,34 @@ input[type="submit"] {
     justify-content: flex-start;
     align-items: flex-end;
     margin-right: 0px;
+   
   }
 
   /* background images without logo for all 6 pages*/
   .backgroundpic {
-    background-image: url(../newpics/backgroundiphone.jpg);
+    background-image: url(./newpics/HOMEBACK.jpg);
+    height: 100vh;
   }
 
   .discography {
-    background-image: url(../newpics/backgroundiphone.jpg);
+    background-image: url(./newpics/DISCOBACK.jpg);
   }
 
   .djmix {
-    background-image: url(../newpics/backgroundiphone.jpg);
+    background-image: url(./newpics/MIXESBACK.jpg);
   }
 
   .nftvisual {
-    background-image: url(../newpics/backgroundiphone.jpg);
+    background-image: url(./newpics/VISUALSBACK.jpg);
   }
 
   .presso {
-    background-image: url(../newpics/backgroundiphone.jpg);
+    background-image: url(./newpics/PRESSBACK.jpg)
   }
 
   .cont {
-    background-image: url(../newpics/backgroundiphone.jpg);
+    background-image: url(./newpics/CONTACTBACK.jpg);
+    height: 100vh;
   }
 
   .text {
@@ -844,6 +1101,14 @@ input[type="submit"] {
     transform: translate(-50%, -50%);
     padding: 10px;
     width: 90%;
+  }
+  .nav-link {
+    margin: 0px;
+    padding: 0;
+    
+  }
+  .navbar ul li {
+    margin: -5px 20px;
   }
 }
 
