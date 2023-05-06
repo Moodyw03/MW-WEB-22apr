@@ -39,7 +39,7 @@ This submission represents my Milestone Project 1 for the Code Institute's Diplo
 - #### Colour Scheme
   - A minimalist and cohesive color palette has been employed to facilitate seamless navigation, while simultaneously capturing the profound essence of the artist's sonic signature.
 - #### Typography
-  - The Montserrat font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.
+  - The Roboto typeface serves as the primary font across the website, with Sans Serif acting as a fallback option should any issues arise with the font importation process. Renowned for its crisp appearance and prevalent use in programming, Roboto is both visually appealing and contextually fitting.
 - #### Imagery
   - Imagery plays a crucial role in capturing user interest. The prominent background hero image boasts a striking, eye-catching design, accentuated by its contemporary and dynamic visual appeal.
 
