@@ -1,4 +1,4 @@
-<h1 align="center">Code Institute Website</h1>
+<h1 align="center">Moody Waters Website</h1>
 
 [View the live project here.](https://moodywaters-milestone1-ci.netlify.app/)
 
@@ -7,7 +7,7 @@ Moody Waters, a versatile multimedia artist and DJ, seeks to captivate potential
 This submission represents my Milestone Project 1 for the Code Institute's Diploma in Web Application Development program. My website comprises five pages and utilizes the HTML and CSS technologies I have acquired throughout the course.
 
 
-<h2 align="center"><img src="https://i.ibb.co/yXPbXJx/Screenshot-2023-05-03-at-20-32-11.png"></h2>
+<h2 align="center"><img src= https://i.ibb.co/yXPbXJx/Screenshot-2023-05-03-at-20-32-11.png"></h2>
 
 ## User Experience (UX)
 
