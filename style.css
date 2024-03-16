@@ -63,6 +63,8 @@ a {
 /* hidden logo for phone */
 .logo {
   display: none;
+  z-index: -1 !important;
+
 }
 
 .navscroll {
