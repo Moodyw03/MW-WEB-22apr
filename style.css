@@ -118,7 +118,7 @@ a {
 
 /* homepage background picture */
 .backgroundpic {
-  background-image: url("newpics/MWWEBBACKGROUNDMAIN.jpg");
+  background-image: url(../newpics/pexelssuzy.jpg);");
   position: relative;
   width: 100%;
   height: 100vh;
@@ -132,7 +132,7 @@ a {
 
 /* discography page background picture */
 .discography {
-  background-image: url("newpics/MWWEBBACKGROUNDDISCO1.jpg");
+  background-image: url("../newpics/pexelssuzy.jpg");
   position: relative;
   width: 100%;
   height: 100vh;
@@ -147,7 +147,7 @@ a {
 
 /* mixes page background picture */
 .djmix {
-  background-image: url("newpics/MWWEBBACKGROUNDMIX.jpg");
+  background-image: url("../newpics/pexelssuzy.jpg");
   position: relative;
   width: 100%;
   height: 130vh;
@@ -161,7 +161,7 @@ a {
 
 /* visuals page background picture */
 .nftvisual {
-  background-image: url("newpics/MWWEBBACKGROUNDNFT.jpg");
+  background-image: url("../newpics/pexelssuzy.jpg");
   position: relative;
   width: 100%;
   height: 100vh;
@@ -174,7 +174,7 @@ a {
 
 /*press page background picture */
 .presso {
-  background-image: url("newpics/MWWEBBACKGROUNDPRESS.jpg");
+  background-image: url("../newpics/pexelssuzy.jpg");
   position: relative;
   width: 100%;
   height: 100vh;
@@ -188,7 +188,7 @@ a {
 
 /* contact page background picture */
 .cont {
-  background-image: url("newpics/MWWEBBACKGROUNDCONTACT.jpg");
+  background-image: url("../newpics/pexelssuzy.jpg");
   position: relative;
   width: 100%;
   height: 100vh;
@@ -604,7 +604,7 @@ textarea {
 
 /* submit button */
 input[type="submit"] {
-  background-color: #303d31;
+  background-color: #64616f;
   /* Green */
   border: none;
   color: white;
