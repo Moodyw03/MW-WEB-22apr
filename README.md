@@ -1,6 +1,6 @@
 <h1 align="center">Moody Waters Website</h1>
 
-[View the live project here.](https://moodywaters-milestone1-ci.netlify.app/)
+
 
 Moody Waters, a versatile multimedia artist and DJ, seeks to captivate potential booking agents and clubs through his engaging website, which also serves as a central platform for his followers. Designed with a responsive layout, the site ensures an attractive and user-friendly experience across all devices.
 
